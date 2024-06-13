@@ -15,24 +15,23 @@ struct getStartedView: View {
                     .ignoresSafeArea()
                 VStack {
                     ReusableText(text: "Inventory Manager")
-                                                    .font(.title2)
-                                                    .foregroundColor(.white)
-                                                    .multilineTextAlignment(.center)
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                    
                     Spacer()
                     
                     ReusableText(text: "Inventory Manager is your ultimate solution for effortless and efficient inventory tracking. Manage your products, finances and streamline your inventory processes, whether you're a small business owner, a retailer, or managing a large warehouse")
-                                                    .font(.footnote)
-                                                    .foregroundColor(.white)
-                                                    .multilineTextAlignment(.leading)
+                        .font(.footnote)
+                        .multilineTextAlignment(.leading)
                     Spacer()
                     
                     
                     NavigationLink(destination: loginPageView()) {
                         ReusableButton(button: "Get Started!")
-                                                    .background(Color.green)
-                                                    .foregroundColor(.white)
-                                                    .cornerRadius(5)
-                                                    .padding(.horizontal, 20)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(5)
+                            .padding(.horizontal, 20)
                     }
                 }
                 .padding(20)
