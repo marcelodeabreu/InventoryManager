@@ -12,19 +12,29 @@ struct loginPageView: View {
     @State private var username: String = ""
     
     @State private var passwordEntry: String = ""
-    @State private var passwordReentry: String = ""
     @State private var showPassword: Bool = false
-    @State private var passwordSecurityCheckPassed: Bool = false
     
     var body: some View {
         ZStack {
+            
             Color.purple
                 .ignoresSafeArea()
             
+            /*
+             
+             Circle()
+             .position(x: 195, y: 100)
+             .foregroundColor(.purple)
+             
+             */
+            
+            
             VStack {
+                
                 ReusableText(text: "Enter your account:")
                     .font(.title3)
                     .multilineTextAlignment(.center)
+                    .padding(30)
                 
                 TextField("Username", text: $username)
                     .keyboardType(.asciiCapable)
@@ -41,7 +51,7 @@ struct loginPageView: View {
                     } else {
                         SecureField("Password", text: $passwordEntry)
                     }
-                    // Hide/Show password button
+                    
                     Button {
                         self.showPassword.toggle()
                     } label: {
@@ -54,10 +64,7 @@ struct loginPageView: View {
                 .padding(10)
                 .background(Color.white)
                 .cornerRadius(10)
-                
-                
-                
-                
+                .foregroundColor(.black)
             }
             .padding(30)
         }
