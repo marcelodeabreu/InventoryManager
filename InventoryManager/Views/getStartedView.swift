@@ -11,7 +11,7 @@ struct getStartedView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.purple
+                Color.gray
                     .ignoresSafeArea()
                 VStack {
                     ReusableText(text: "Inventory Manager")

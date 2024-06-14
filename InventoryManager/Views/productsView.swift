@@ -1,21 +1,20 @@
 //
-//  homeView.swift
+//  productsView.swift
 //  InventoryManager
 //
-//  Created by Marcelo de Abreu on 13/06/24.
+//  Created by Marcelo de Abreu on 14/06/24.
 //
 
 import SwiftUI
 
-struct homeView: View {
+struct productsView: View {
     var body: some View {
         ZStack {
             
         }
-        
     }
 }
 
 #Preview {
-    homeView()
+    productsView()
 }
