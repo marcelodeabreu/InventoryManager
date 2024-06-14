@@ -9,6 +9,9 @@ import SwiftUI
 
 struct getStartedView: View {
     var body: some View {
+        
+        // SET UP NAVIGATIONPATH!
+        
         NavigationView {
             ZStack {
                 Color.gray
