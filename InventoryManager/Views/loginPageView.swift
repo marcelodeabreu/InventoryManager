@@ -31,7 +31,7 @@ struct loginPageView: View {
             
             VStack {
                 
-                ReusableText(text: "Enter your account:")
+                ReusableText(text: "LOGIN")
                     .font(.title3)
                     .multilineTextAlignment(.center)
                     .padding(30)
@@ -65,6 +65,13 @@ struct loginPageView: View {
                 .background(Color.white)
                 .cornerRadius(10)
                 .foregroundColor(.black)
+                
+                ReusableButton(button: "ENTER")
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .cornerRadius(5)
+                    .padding(20)
+                
             }
             .padding(30)
         }
