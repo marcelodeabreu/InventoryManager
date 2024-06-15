@@ -68,7 +68,7 @@ struct loginPageView: View {
                 .cornerRadius(10)
                 .foregroundColor(.black)
                 
-                NavigationLink(destination: registerPageView()) {
+                NavigationLink(destination: menuView()) {
                     ReusableButton(button: "ENTER")
                         .background(Color.green)
                         .foregroundColor(.white)
@@ -76,10 +76,15 @@ struct loginPageView: View {
                         .padding(20)
                 }
                 
+                NavigationLink(destination: registerPageView()) {
+                    ReusableButton(button: "create account")
+                        .padding(20)
+                    
+                }
+                .padding(30)
             }
-            .padding(30)
+            
         }
-        
     }
 }
 
