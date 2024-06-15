@@ -12,7 +12,7 @@ struct getStartedView: View {
         
         // SET UP NAVIGATIONPATH!
         
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color.gray
                     .ignoresSafeArea()

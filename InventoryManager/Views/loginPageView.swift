@@ -16,71 +16,70 @@ struct loginPageView: View {
     
     var body: some View {
         
-        NavigationView {
-            ZStack {
+        
+        ZStack {
+            
+            Color.gray
+                .ignoresSafeArea()
+            
+            /*
+             
+             Circle()
+             .position(x: 195, y: 100)
+             .foregroundColor(.purple)
+             
+             */
+            
+            
+            VStack {
                 
-                Color.gray
-                    .ignoresSafeArea()
+                ReusableText(text: "LOGIN")
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+                    .padding(30)
                 
-                /*
-                 
-                 Circle()
-                 .position(x: 195, y: 100)
-                 .foregroundColor(.purple)
-                 
-                 */
-                
-                
-                VStack {
-                    
-                    ReusableText(text: "LOGIN")
-                        .font(.title3)
-                        .multilineTextAlignment(.center)
-                        .padding(30)
-                    
-                    TextField("Username", text: $username)
-                        .keyboardType(.asciiCapable)
-                        .autocorrectionDisabled(true)
-                        .textInputAutocapitalization(.never)
-                        .padding(10)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                    
-                    HStack {
-                        
-                        if showPassword {
-                            TextField("Password", text: $passwordEntry)
-                        } else {
-                            SecureField("Password", text: $passwordEntry)
-                        }
-                        
-                        Button {
-                            self.showPassword.toggle()
-                        } label: {
-                            Image(systemName: self.showPassword ? "eye" : "eye.slash")
-                        }
-                    }
+                TextField("Username", text: $username)
                     .keyboardType(.asciiCapable)
                     .autocorrectionDisabled(true)
                     .textInputAutocapitalization(.never)
                     .padding(10)
                     .background(Color.white)
                     .cornerRadius(10)
-                    .foregroundColor(.black)
+                
+                HStack {
                     
-                    NavigationLink(destination: registerPageView()) {
-                        ReusableButton(button: "ENTER")
-                            .background(Color.green)
-                            .foregroundColor(.white)
-                            .cornerRadius(5)
-                            .padding(20)
+                    if showPassword {
+                        TextField("Password", text: $passwordEntry)
+                    } else {
+                        SecureField("Password", text: $passwordEntry)
                     }
                     
+                    Button {
+                        self.showPassword.toggle()
+                    } label: {
+                        Image(systemName: self.showPassword ? "eye" : "eye.slash")
+                    }
                 }
-                .padding(30)
+                .keyboardType(.asciiCapable)
+                .autocorrectionDisabled(true)
+                .textInputAutocapitalization(.never)
+                .padding(10)
+                .background(Color.white)
+                .cornerRadius(10)
+                .foregroundColor(.black)
+                
+                NavigationLink(destination: registerPageView()) {
+                    ReusableButton(button: "ENTER")
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(5)
+                        .padding(20)
+                }
+                
             }
+            .padding(30)
         }
-        .navigationBarBackButtonHidden(true)
+        
     }
 }
 
