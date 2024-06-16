@@ -22,15 +22,6 @@ struct loginPageView: View {
             Color.gray
                 .ignoresSafeArea()
             
-            /*
-             
-             Circle()
-             .position(x: 195, y: 100)
-             .foregroundColor(.purple)
-             
-             */
-            
-            
             VStack {
                 
                 ReusableText(text: "LOGIN")
@@ -83,7 +74,6 @@ struct loginPageView: View {
                 }
                 .padding(30)
             }
-            
         }
     }
 }

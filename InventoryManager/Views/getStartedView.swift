@@ -10,12 +10,12 @@ import SwiftUI
 struct getStartedView: View {
     var body: some View {
         
-        // SET UP NAVIGATIONPATH!
-        
         NavigationStack {
+            
             ZStack {
                 Color.gray
                     .ignoresSafeArea()
+                
                 VStack {
                     ReusableText(text: "Inventory Manager")
                         .font(.title2)
@@ -27,7 +27,6 @@ struct getStartedView: View {
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                     Spacer()
-                    
                     
                     NavigationLink(destination: loginPageView()) {
                         ReusableButton(button: "Get Started!")
