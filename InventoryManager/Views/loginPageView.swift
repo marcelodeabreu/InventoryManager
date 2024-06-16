@@ -24,6 +24,8 @@ struct loginPageView: View {
             
             VStack {
                 
+                Spacer()
+                
                 ReusableText(text: "LOGIN")
                     .font(.title3)
                     .multilineTextAlignment(.center)
@@ -66,6 +68,10 @@ struct loginPageView: View {
                         .cornerRadius(5)
                         .padding(20)
                 }
+                
+                Spacer()
+                
+                ReusableText(text: "First time around?")
                 
                 NavigationLink(destination: registerPageView()) {
                     ReusableButton(button: "create account")

@@ -26,7 +26,7 @@ struct registerPageView: View {
                 
                 // USERNAME
                 
-                TextField("Username", text: $username)
+                TextField("username", text: $username)
                     .keyboardType(.asciiCapable)
                     .autocorrectionDisabled(true)
                     .textInputAutocapitalization(.never)
@@ -39,9 +39,9 @@ struct registerPageView: View {
                 HStack {
                     
                     if showPassword {
-                        TextField("Password", text: $passwordEntry)
+                        TextField("password", text: $passwordEntry)
                     } else {
-                        SecureField("Password", text: $passwordEntry)
+                        SecureField("password", text: $passwordEntry)
                     }
                     
                     Button {
@@ -60,7 +60,14 @@ struct registerPageView: View {
                 
                 // PASSWORD CONFIRMATION
                 
-                SecureField("Password (Confirm)", text: $passwordConfirmation)
+                SecureField("password confirmation", text: $passwordConfirmation)
+                    .keyboardType(.asciiCapable)
+                    .autocorrectionDisabled(true)
+                    .textInputAutocapitalization(.never)
+                    .padding(10)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                
                 if !passwordEntry.isEmpty,
                    !passwordConfirmation.isEmpty,
                    passwordEntry != passwordConfirmation {
@@ -71,14 +78,7 @@ struct registerPageView: View {
                 NavigationLink(destination: menuView()) {
                     ReusableButton(button: "register")
                 }
-                
             }
-            .keyboardType(.asciiCapable)
-            .autocorrectionDisabled(true)
-            .textInputAutocapitalization(.never)
-            .padding(10)
-            .background(Color.white)
-            .cornerRadius(10)
         }
     }
 }
