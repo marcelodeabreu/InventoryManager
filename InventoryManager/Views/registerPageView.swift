@@ -21,6 +21,7 @@ struct registerPageView: View {
         ZStack {
             LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
+                .opacity(0.9)
             
             VStack {
                 
@@ -68,15 +69,16 @@ struct registerPageView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                 
-                if !passwordEntry.isEmpty,
-                   !passwordConfirmation.isEmpty,
-                   passwordEntry != passwordConfirmation {
+                if !passwordEntry.isEmpty, !passwordConfirmation.isEmpty, passwordEntry != passwordConfirmation {
                     Label("Passwords does not match", systemImage: "xmark.circle")
                         .foregroundColor(.red)
                 }
                 
                 NavigationLink(destination: menuView()) {
                     ReusableButton(button: "register")
+                        .padding(10)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
                 }
             }
         }

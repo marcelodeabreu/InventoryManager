@@ -13,6 +13,7 @@ struct productsView: View {
             
             LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
+                .opacity(0.9)
             
         }
     }

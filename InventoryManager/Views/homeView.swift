@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct homeView: View {
+    
+    var Category: [String] = []
+    var Product: [String] = []
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
+                .opacity(0.9)
+            
+            VStack {
+                
+                ReusableButton(button: "add category")
+                
+            }
             
             
             

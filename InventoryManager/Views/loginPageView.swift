@@ -3,7 +3,16 @@
 //  InventoryManager
 //
 //  Created by Marcelo de Abreu on 13/06/24.
-//
+
+/*
+ ISSUES
+ 
+ 1.
+ 
+ 2.
+ 
+ */
+
 
 import SwiftUI
 
@@ -21,6 +30,7 @@ struct loginPageView: View {
             
             LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
+                .opacity(0.9)
             
             VStack {
                 
@@ -63,9 +73,8 @@ struct loginPageView: View {
                 
                 NavigationLink(destination: menuView()) {
                     ReusableButton(button: "ENTER")
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(5)
+                        .background(Color.white)
+                        .foregroundColor(.purple)
                         .padding(20)
                 }
                 
@@ -75,8 +84,9 @@ struct loginPageView: View {
                 
                 NavigationLink(destination: registerPageView()) {
                     ReusableButton(button: "create account")
-                        .padding(20)
-                    
+                        .padding(15)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
                 }
                 .padding(30)
             }

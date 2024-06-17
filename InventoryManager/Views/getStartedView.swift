@@ -3,7 +3,15 @@
 //  InventoryManager
 //
 //  Created by Marcelo de Abreu on 13/06/24.
-//
+
+/*
+ ISSUES
+ 
+ 1. "get started" button background size (padding conflicting)
+ 
+ 2.
+ 
+ */
 
 import SwiftUI
 
@@ -15,6 +23,7 @@ struct getStartedView: View {
             ZStack {
                 LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
+                    .opacity(0.9)
                 
                 VStack {
                     ReusableText(text: "Inventory Manager")
@@ -23,17 +32,15 @@ struct getStartedView: View {
                     
                     Spacer()
                     
-                    ReusableText(text: "Inventory Manager is your ultimate solution for effortless and efficient inventory tracking. Manage your products, finances and streamline your inventory processes, whether you're a small business owner, a retailer, or managing a large warehouse")
-                        .font(.footnote)
-                        .multilineTextAlignment(.leading)
+                    ReusableText(text: "Inventory Manager is your solution for effortless and efficient inventory tracking. Manage your products, finances and streamline your inventory processes, whether you're a small business owner, a retailer, or managing a large warehouse.")
+                        .font(.subheadline)
+                        .multilineTextAlignment(.center)
                     Spacer()
                     
                     NavigationLink(destination: loginPageView()) {
                         ReusableButton(button: "Get Started!")
-                            .background(Color.green)
+                            .background(Color.blue)
                             .foregroundColor(.white)
-                            .cornerRadius(5)
-                            .padding(.horizontal, 20)
                     }
                 }
                 .padding(20)

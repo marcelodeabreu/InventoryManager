@@ -3,7 +3,15 @@
 //  InventoryManager
 //
 //  Created by Marcelo de Abreu on 14/06/24.
-//
+
+/*
+ ISSUES
+ 
+ 1. Selected tab icon does not appear.
+ 
+ 2.
+ 
+ */
 
 import SwiftUI
 
