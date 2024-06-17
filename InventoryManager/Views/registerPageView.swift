@@ -19,8 +19,8 @@ struct registerPageView: View {
     var body: some View {
         
         ZStack {
-            Color.gray
-                .ignoresSafeArea()
+            LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
             
             VStack {
                 
@@ -56,7 +56,7 @@ struct registerPageView: View {
                 .padding(10)
                 .background(Color.white)
                 .cornerRadius(10)
-                .foregroundColor(.black)
+                .foregroundColor(.gray)
                 
                 // PASSWORD CONFIRMATION
                 

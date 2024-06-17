@@ -11,6 +11,9 @@ struct productsView: View {
     var body: some View {
         ZStack {
             
+            LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            
         }
     }
 }
