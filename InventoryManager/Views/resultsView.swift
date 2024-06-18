@@ -7,6 +7,10 @@
 import SwiftUI
 
 struct resultsView: View {
+    
+    @State var monthlyIncome = ""
+    @State var dailyIncome = ""
+    
     var body: some View {
         ZStack {
             
@@ -14,6 +18,17 @@ struct resultsView: View {
                 .edgesIgnoringSafeArea(.all)
                 .opacity(0.9)
             
+            VStack {
+                
+                ReusableText(text: "this month: \(monthlyIncome)")
+                
+                ReusableText(text: "today: \(dailyIncome)")
+                
+                // CATEGORY & PRODUCTS INCOME
+                
+                // create list for final results
+                
+            }
         }
     }
 }

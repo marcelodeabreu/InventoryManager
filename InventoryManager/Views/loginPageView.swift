@@ -41,7 +41,7 @@ struct loginPageView: View {
                     .multilineTextAlignment(.center)
                     .padding(10)
                 
-                TextField("Username", text: $username)
+                TextField("username", text: $username)
                     .keyboardType(.asciiCapable)
                     .autocorrectionDisabled(true)
                     .textInputAutocapitalization(.never)
@@ -52,9 +52,9 @@ struct loginPageView: View {
                 HStack {
                     
                     if showPassword {
-                        TextField("Password", text: $passwordEntry)
+                        TextField("password", text: $passwordEntry)
                     } else {
-                        SecureField("Password", text: $passwordEntry)
+                        SecureField("password", text: $passwordEntry)
                     }
                     
                     Button {
@@ -86,7 +86,7 @@ struct loginPageView: View {
                 
                 NavigationLink(destination: registerPageView()) {
                     ReusableButton(button: "create account")
-                        .padding(15)
+                        .padding(10)
                         .background(Color.blue)
                         .foregroundColor(.white)
                 }

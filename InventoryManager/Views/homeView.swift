@@ -8,8 +8,9 @@ import SwiftUI
 
 struct homeView: View {
     
-    var Category: [String] = []
-    var Product: [String] = []
+    @State var Category: [String] = []
+    @State var Product: [String] = []
+    @State var totalEarnings = ""
     
     var body: some View {
         ZStack {
@@ -19,10 +20,10 @@ struct homeView: View {
             
             VStack {
                 
-                ReusableButton(button: "total earnings:")
+                ReusableButton(button: "TOTAL EARNINGS") // only total earnings will appear at homeView
                     .padding()
                 
-                ReusableText(text: "$650.00")
+                ReusableText(text: "$\(totalEarnings)")
                     
             }
         }
