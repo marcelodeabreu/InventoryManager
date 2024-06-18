@@ -3,7 +3,6 @@
 //  InventoryManager
 //
 //  Created by Marcelo de Abreu on 13/06/24.
-//
 
 import SwiftUI
 

@@ -3,7 +3,6 @@
 //  InventoryManager
 //
 //  Created by Marcelo de Abreu on 13/06/24.
-//
 
 import SwiftUI
 
@@ -20,12 +19,12 @@ struct homeView: View {
             
             VStack {
                 
-                ReusableButton(button: "add category")
+                ReusableButton(button: "total earnings:")
+                    .padding()
                 
+                ReusableText(text: "$650.00")
+                    
             }
-            
-            
-            
         }
     }
 }

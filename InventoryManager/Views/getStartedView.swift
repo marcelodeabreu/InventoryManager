@@ -32,7 +32,7 @@ struct getStartedView: View {
                     
                     Spacer()
                     
-                    ReusableText(text: "Inventory Manager is your solution for effortless and efficient inventory tracking. Manage your products, finances and streamline your inventory processes, whether you're a small business owner, a retailer, or managing a large warehouse.")
+                    ReusableText(text: "Inventory Manager is your solution for effortless and efficient inventory tracking. Manage your products, finances and streamline your inventory processes, whether you're a small business owner, a retailer or managing a large warehouse.")
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
                     Spacer()

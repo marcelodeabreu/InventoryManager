@@ -7,7 +7,7 @@
 /*
  ISSUES
  
- 1. Selected tab icon does not appear.
+ 1.
  
  2.
  

@@ -39,7 +39,7 @@ struct loginPageView: View {
                 ReusableText(text: "LOGIN")
                     .font(.title3)
                     .multilineTextAlignment(.center)
-                    .padding(30)
+                    .padding(10)
                 
                 TextField("Username", text: $username)
                     .keyboardType(.asciiCapable)
@@ -73,10 +73,12 @@ struct loginPageView: View {
                 
                 NavigationLink(destination: menuView()) {
                     ReusableButton(button: "ENTER")
-                        .background(Color.white)
-                        .foregroundColor(.purple)
-                        .padding(20)
+                        .padding(10)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        
                 }
+                .padding(10)
                 
                 Spacer()
                 
