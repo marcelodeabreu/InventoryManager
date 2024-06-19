@@ -39,6 +39,7 @@ struct getStartedView: View {
                     
                     NavigationLink(destination: loginPageView()) {
                         ReusableButton(button: "Get Started!")
+                            .padding(10)
                             .background(Color.blue)
                             .foregroundColor(.white)
                     }

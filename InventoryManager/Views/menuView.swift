@@ -20,26 +20,31 @@ struct menuView: View {
         TabView {
             
             homeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
+                            .tabItem {
+                                Image(systemName: "house.fill")
+                                Text("Home")
+                            }
+                    
+                    .accentColor(.white)
             
             productsView()
-                .tabItem {
-                    Image(systemName: "cart")
-                    Text("Products")
-                }
+                            .tabItem {
+                                Image(systemName: "cart")
+                                Text("Products")
+                            }
+                    
+                    .accentColor(.white)
             
             resultsView()
-                .tabItem {
-                    Image(systemName: "chart.bar")
-                    Text("Results")
-                }
-            
-        }
+                            .tabItem {
+                                Image(systemName: "chart.bar")
+                                Text("Results")
+                            }
+                    }
+                    .accentColor(.white)
+                
         
-        
+
     }
 }
 

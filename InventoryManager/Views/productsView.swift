@@ -17,14 +17,18 @@ struct productsView: View {
                 .edgesIgnoringSafeArea(.all)
                 .opacity(0.9)
             
+            
             VStack {
                 
                 //         Picker(selection: <#T##Binding<Hashable>#>, content: <#T##() -> View#>, label: <#T##() -> View#>)
                 
+                // LIST
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("Add Product")})
-                
+                .padding(10)
+                .background(Color.blue)
+                .foregroundColor(.white)
                 
             }
         }

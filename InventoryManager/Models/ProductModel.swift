@@ -6,17 +6,23 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Category: Identifiable {
     let id = UUID()
     var name: String
-    var products: [Product]
+    var products: [String]
 }
 
-struct Product: Identifiable {
-    let id = UUID()
-    var name: String
-    var quantity: Int
-    var productPrice = 0
-}
+
+
+
+
+
+
+//struct Product: Identifiable {
+//    let id = UUID()
+//    var name: String
+//    var quantity: Int
+//    var productSalePrice: Int
+//    var productBuyingPrice: Int
+//}
