@@ -42,9 +42,6 @@ struct menuView: View {
                             }
                     }
                     .accentColor(.white)
-                
-        
-
     }
 }
 

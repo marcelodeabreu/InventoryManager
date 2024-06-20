@@ -9,7 +9,6 @@ import SwiftUI
 struct registerPageView: View {
     
     @State private var username: String = ""
-    
     @State private var passwordEntry: String = ""
     @State private var passwordConfirmation: String = ""
     @State private var showPassword: Bool = false

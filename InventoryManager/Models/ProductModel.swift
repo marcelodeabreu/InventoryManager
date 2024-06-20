@@ -11,6 +11,10 @@ struct Category: Identifiable {
     let id = UUID()
     var name: String
     var products: [String]
+    
+    mutating func addProduct(_ product: String) {
+        products.append(product)
+    }
 }
 
 

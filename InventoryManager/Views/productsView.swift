@@ -8,7 +8,6 @@ import SwiftUI
 
 struct productsView: View {
     
-    @State private var selectedCategoryID: UUID?
     
     var body: some View {
         ZStack {
@@ -20,15 +19,15 @@ struct productsView: View {
             
             VStack {
                 
-                //         Picker(selection: <#T##Binding<Hashable>#>, content: <#T##() -> View#>, label: <#T##() -> View#>)
-                
-                // LIST
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Add Product")})
-                .padding(10)
-                .background(Color.blue)
-                .foregroundColor(.white)
+                //                Picker(selection: <#T##Binding<Hashable>#>, content: <#T##() -> View#>, label: <#T##() -> View#>)
+                //
+                //                LIST
+                //
+                //                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                //                    Text("Add Product")})
+                //                .padding(10)
+                //                .background(Color.blue)
+                //                .foregroundColor(.white)
                 
             }
         }

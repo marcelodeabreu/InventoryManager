@@ -19,12 +19,10 @@ import SwiftUI
 struct loginPageView: View {
     
     @State private var username: String = ""
-    
     @State private var passwordEntry: String = ""
     @State private var showPassword: Bool = false
     
     var body: some View {
-        
         
         ZStack {
             
@@ -76,7 +74,7 @@ struct loginPageView: View {
                         .padding(10)
                         .background(Color.blue)
                         .foregroundColor(.white)
-                        
+                    
                 }
                 .padding(10)
                 
