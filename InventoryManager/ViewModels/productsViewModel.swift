@@ -11,15 +11,9 @@ class CategoryViewModel: ObservableObject {
     
     @Published var categories: [Category] = []
     
-
+    func addProduct() {
         
-    func addProduct(to categoryID: UUID, product: String) {
-            if let index = categories.firstIndex(where: { $0.id == categoryID }) {
-                categories[index].addProduct(product)
-            }
-        }
-    
-    
+    }
     
     func dailyIncomeResult() {
         
@@ -33,9 +27,4 @@ class CategoryViewModel: ObservableObject {
         
     }
     
-    
-    
-    
 }
-
-
