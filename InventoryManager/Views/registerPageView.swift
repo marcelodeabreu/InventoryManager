@@ -1,4 +1,3 @@
-//
 //  registerPageView.swift
 //  InventoryManager
 //

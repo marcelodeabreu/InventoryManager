@@ -12,7 +12,7 @@ struct resultsView: View {
     @State var dailyIncome = ""
     
     var body: some View {
-//        
+        
         
         
         

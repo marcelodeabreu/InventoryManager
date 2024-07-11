@@ -1,4 +1,3 @@
-//
 //  menuView.swift
 //  InventoryManager
 //

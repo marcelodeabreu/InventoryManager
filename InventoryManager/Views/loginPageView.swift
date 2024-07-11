@@ -1,18 +1,7 @@
-//
 //  loginPageView.swift
 //  InventoryManager
 //
 //  Created by Marcelo de Abreu on 13/06/24.
-
-/*
- ISSUES
- 
- 1.
- 
- 2.
- 
- */
-
 
 import SwiftUI
 

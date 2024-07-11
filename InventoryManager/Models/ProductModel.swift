@@ -1,4 +1,3 @@
-//
 //  ProductModel.swift
 //  InventoryManager
 //
@@ -16,6 +15,14 @@ struct Product: Hashable, Identifiable {
     var productBuyingPrice: Float
     var customDetails: [String]
 }
+
+struct Category: Identifiable {
+    let id: UUID
+    var name: String
+}
+
+
+// <<< MOCK DATA >>>
 
 struct MockData {
     
@@ -35,34 +42,6 @@ struct MockData {
                                    quantity: 3,
                                    productSalePrice: 9.90,
                                    productBuyingPrice: 7.00,
-                                   customDetails: ["2 meters"]),
-                           
-//                           Product(date: .now,
-//                                   name: <#T##String#>,
-//                                   category: <#T##String#>,
-//                                   quantity: <#T##Int#>,
-//                                   productSalePrice: <#T##Float#>,
-//                                   productBuyingPrice: <#T##Float#>,
-//                                   customDetails: <#T##[String]#>),
-//                           
-//                           Product(date: .now,
-//                                   name: <#T##String#>,
-//                                   category: <#T##String#>,
-//                                   quantity: <#T##Int#>,
-//                                   productSalePrice: <#T##Float#>,
-//                                   productBuyingPrice: <#T##Float#>,
-//                                   customDetails: <#T##[String]#>),
-                           
-    ]
+                                   customDetails: ["2 meters"])]
     
 }
-
-
-
-
-
-
-
-//let mockProducts =  [Product(name: <#T##String#>, category: <#T##String#>, quantity: <#T##Int#>, productSalePrice: <#T##Float#>, productBuyingPrice: <#T##Float#>, customDetails: <#T##[String]#>)]
-
-// mock functionalities

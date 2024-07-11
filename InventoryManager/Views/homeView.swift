@@ -1,4 +1,3 @@
-//
 //  homeView.swift
 //  InventoryManager
 //

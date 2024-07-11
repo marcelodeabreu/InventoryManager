@@ -1,4 +1,3 @@
-//
 //  productsView.swift
 //  InventoryManager
 //
@@ -11,32 +10,39 @@ struct productsView: View {
     
     var body: some View {
         
-        List {
+        Section("Products") {
             
-            ForEach(MockData.products) { results in
+            List {
                 
-                HStack(alignment: .lastTextBaseline) {
+                ForEach(MockData.products) { results in
                     
-                    Text(results.date.formatted(date: .numeric, time: .omitted))
-                        .font(.footnote)
-                        .frame(width: 80, alignment: .leading)
-                    
-                    Spacer()
-                    
-                    Text(results.name)
-                    
-                    Spacer()
-                    
-                    Text(results.quantity, format: .number)
-                     
-                    Spacer()
-                    
-                    Text(results.productSalePrice, format: .currency(code: "BRL"))
-                        .foregroundColor(.green)
+                    HStack(alignment: .lastTextBaseline) {
+                        
+                        Text(results.date.formatted(date: .numeric, time: .omitted))
+                            .font(.footnote)
+                            .frame(width: 80, alignment: .leading)
+                        
+                        Spacer()
+                        
+                        Text(results.name)
+                        
+                        Spacer()
+                        
+                        Text(results.quantity, format: .number)
+                        
+                        Spacer()
+                        
+//                        Text(results.productSalePrice, format: .currency(code: "BRL"))
+//                            .foregroundColor(.green)
+                        
+                    }
                     
                 }
+                .listRowBackground(Color.blue)
+                .foregroundColor(.white)
                 
             }
+            
             
         }
         
@@ -45,51 +51,51 @@ struct productsView: View {
         
         
         
-//        ZStack {
-//            
-//            // change background to apply later to menuview
-//            LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
-//                .opacity(0.9)
-//            
-//            VStack {
-//                
-//                
-//                HStack {
-//                    Image("mockProduct01")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 80)
-//                                        .padding(20)
-//                    
-//                    
-//                    VStack {
-//                        
-//                        ReusableText(text: "USB-C cable")
-//                        
-//                        HStack {
-//                            ReusableText(text: "Sale:")
-//                            
-//                            ReusableText(text: "$2.50")
-//                                .foregroundColor(.green)
-//                        }
-//                        
-//                        HStack {
-//                            ReusableText(text: "Buy:")
-//                            
-//                            ReusableText(text: "$1.75")
-//                                .foregroundColor(.blue)
-//                        }
-//                        
-//                    }
-//                }
-//                .padding(.horizontal, 10)
-//            }
-//            .background(Color.gray)
-//            .cornerRadius(10)
-//            
-//                
-//            
-//        }
+        //        ZStack {
+        //
+        //            // change background to apply later to menuview
+        //            LinearGradient(colors: [Color.purple, Color.blue], startPoint: .top, endPoint: .bottom)
+        //                .opacity(0.9)
+        //
+        //            VStack {
+        //
+        //
+        //                HStack {
+        //                    Image("mockProduct01")
+        //                                        .resizable()
+        //                                        .scaledToFit()
+        //                                        .frame(width: 80)
+        //                                        .padding(20)
+        //
+        //
+        //                    VStack {
+        //
+        //                        ReusableText(text: "USB-C cable")
+        //
+        //                        HStack {
+        //                            ReusableText(text: "Sale:")
+        //
+        //                            ReusableText(text: "$2.50")
+        //                                .foregroundColor(.green)
+        //                        }
+        //
+        //                        HStack {
+        //                            ReusableText(text: "Buy:")
+        //
+        //                            ReusableText(text: "$1.75")
+        //                                .foregroundColor(.blue)
+        //                        }
+        //
+        //                    }
+        //                }
+        //                .padding(.horizontal, 10)
+        //            }
+        //            .background(Color.gray)
+        //            .cornerRadius(10)
+        //
+        //
+        //
+        //        }
     }
 }
 

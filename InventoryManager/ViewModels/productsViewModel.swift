@@ -9,21 +9,15 @@ import Foundation
 
 class CategoryViewModel: ObservableObject {
     
-    @Published var categories: [Category] = []
-    
     func addProduct() {
         
     }
     
-    func dailyIncomeResult() {
+    func deleteProduct() {
         
     }
     
-    func monthlyIncomeResult() {
-        
-    }
-    
-    func totalEarningsResult() {
+    func editProduct () {
         
     }
     
